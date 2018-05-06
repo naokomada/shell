@@ -1,0 +1,4 @@
+FROM ubuntu
+MAINTAINER NK
+
+RUN sh

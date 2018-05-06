@@ -1,0 +1,14 @@
+version: "2"
+services:
+  shellshocker:
+    build:
+      context: .
+    user: root
+    ports:
+      - "80:8088"
+    volumes:
+      - "./work:/home/shellshocker/work"
+    environment:
+      NB_UID: 8088
+      GRANT_SUDO: "yes"
+    command: sh
